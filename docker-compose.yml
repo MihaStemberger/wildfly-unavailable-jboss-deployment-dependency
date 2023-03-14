@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  wildfly:
+    container_name: "wildfly"
+    build:
+      context: docker/wildfly/target/classes
+    ports:
+      - "8080:8080"
+      - "8787:8787"
+      - "9990:9990"
