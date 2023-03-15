@@ -1,10 +1,18 @@
 version: "3.9"
 services:
-  wildfly:
-    container_name: "wildfly"
+  non-working-wildfly:
+    container_name: "non-working-wildfly"
     build:
-      context: docker/wildfly/target/classes
+      context: docker/non-working-wildfly/target/classes
     ports:
       - "8080:8080"
       - "8787:8787"
       - "9990:9990"
+  working-wildfly:
+    container_name: "working-wildfly"
+    build:
+      context: docker/working-wildfly/target/classes
+    ports:
+      - "8081:8080"
+      - "8788:8787"
+      - "9991:9990"

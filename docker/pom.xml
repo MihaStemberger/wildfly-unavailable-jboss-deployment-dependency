@@ -13,7 +13,8 @@
     <artifactId>docker</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>wildfly</module>
+        <module>non-working-wildfly</module>
+        <module>working-wildfly</module>
     </modules>
 
     <build>
