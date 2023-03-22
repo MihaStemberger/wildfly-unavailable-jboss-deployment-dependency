@@ -19,11 +19,13 @@
     </modules>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.jboss.spec/jboss-jakartaee-8.0 -->
         <dependency>
             <groupId>org.jboss.spec</groupId>
-            <artifactId>jboss-javaee-8.0</artifactId>
-            <version>1.0.4.Final</version>
+            <artifactId>jboss-jakartaee-8.0</artifactId>
+            <version>1.0.1.Final</version>
             <type>pom</type>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
